@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Cards</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Karma", sans-serif
+    }
+
+    .w3-bar-block .w3-bar-item {
+      padding: 20px
+    }
+  </style>
+</head>
+
+<body>
+
+  <div style="text-align:center">
+    <h1> Poker Hand Quiz tcoverst</h1>
+    <p>Click the Shuffle button to shuffle all the cards or click a single card to shuffle it.</p>
+    <p>Use the drop down menu to identify the hand. Press Submit to see if you are right. Use the Hint button if you need help. Press Next to try another hand.</p>
+    <button id="button-Shuffle">Shuffle</button>
+    <button id="button-Hint">Hint</button>
+    <label id="label-output"></label>
+  </div>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main w3-content w3-padding" style="max-width:1200px">
+
+    <!-- First Photo Grid-->
+    <div class="w3-row-padding">
+      <div class="w3-col" , style="width:20%">
+        <img src="cards\2_of_clubs.png" id="card1" alt="card1" style="width:100%">
+      </div>
+      <div class="w3-col" , style="width:20%">
+        <img src="cards\3_of_clubs.png" id="card2" alt="card2" style="width:100%">
+      </div>
+      <div class="w3-col" , style="width:20%">
+        <img src="cards\4_of_clubs.png" id="card3" alt="card3" style="width:100%">
+      </div>
+      <div class="w3-col" , style="width:20%">
+        <img src="cards\5_of_clubs.png" id="card4" alt="card4" style="width:100%">
+      </div>
+      <div class="w3-col" , style="width:20%">
+        <img src="cards\5_of_clubs.png" id="card5" alt="card5" style="width:100%">
+      </div>
+    </div>
+    <br>
+    <form action="" method="" onsubmit="return false">
+    	<div class="form-group">
+    		<label for="select-2805128">Select</label>
+    		<select class="form-control custom-select" name="select-2805128" id="select-whathand">
+          <option value="Select One">Select One</option>
+          <option value="High Card">High Card</option>
+    			<option value="1 Pair">1 Pair</option>
+    			<option value="2 Pair">2 Pair</option>
+    			<option value="3 of a Kind">3 of a Kind</option>
+    			<option value="Straight">Straight</option>
+    			<option value="Flush">Flush</option>
+    			<option value="Full House">Full House</option>
+    			<option value="4 of a Kind">4 of a Kind</option>
+    			<option value="Straight Flush">Straight Flush</option>
+    			<option value="Royal Flush">Royal Flush</option>
+    		</select>
+    	</div>
+      <br>
+      <button id="button-Submit">Submit</button>
+      <button type = "reset" id="button-Next">Next</button>
+      <label id="label-hand">What hand?</label>
+    </form>
+    <!-- End page content -->
+  </div>
+  <script type="text/javascript" src="main.js">
+  </script>
+  <script>
+    // Script to open and close sidebar
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+    }
+
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+  </script>
+
+</body>
+
+</html>
